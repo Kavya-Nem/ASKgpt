@@ -20,7 +20,6 @@ def process_request(request):
             response += (chunk.choices[0].delta.content)
     return response
 def index(request, query):
-    print ("query= " + query)
     response = process_request(query)
     httpResponse = HttpResponse(response)
     return httpResponse
