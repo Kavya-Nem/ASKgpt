@@ -29,9 +29,7 @@
         form.addEventListener('submit',function(event){
             event.preventDefault()
             var query = document.getElementById('message').value
-            var url = "http://127.0.0.1:8000/polls/" + encodeURIComponent(query)
-            console.log("query = " + query)
-            console.log("url = " + url)
+            var url = '/polls/' + encodeURIComponent(query)
             window.location.replace(url)
         })
     </script>
