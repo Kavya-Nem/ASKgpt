@@ -1,20 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> .-->
         <title>Chat Interface</title>
-        <!-- <link rel="stylesheet" href="{% static 'chat/styles.css' %}"> .-->
     </head>
     <body>
-        <!-- <div id="chat-container"> .-->
         <form id="form">
-            <!-- <div id="messages"></div> .-->
             <input type="text" id="message" placeholder="Type a message..." required>
             <input type="submit" value="Send">
-        <!-- <script src="{% static 'chat/scripts.js' %}"></script> .-->
         </form>
-    <!-- </div> .-->
     </body>
     <script>
         function responseCallback(response) {
@@ -28,7 +21,7 @@
                 if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
                     callback(xmlHttp.responseText);
             }
-            xmlHttp.open("GET", theUrl, true); // true for asynchronous 
+            xmlHttp.open("GET", theUrl, true); 
             xmlHttp.send(null);
         }
 
@@ -40,7 +33,6 @@
             console.log("query = " + query)
             console.log("url = " + url)
             window.location.replace(url)
-            // httpGetAsync(url, responseCallback)            
         })
     </script>
 </html>
