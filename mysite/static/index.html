@@ -27,7 +27,7 @@
 
         var form = document.getElementById('form')
         form.addEventListener('submit',function(event){
-            event.preventDefault() // prevents the form from autosubmitting
+            event.preventDefault()
             var query = document.getElementById('message').value
             var url = "http://127.0.0.1:8000/polls/" + encodeURIComponent(query)
             console.log("query = " + query)
