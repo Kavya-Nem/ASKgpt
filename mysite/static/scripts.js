@@ -45,19 +45,6 @@ document.addEventListener("DOMContentLoaded", function() {
         return cookieValue;
     }
 
-    /*function sendMessage() {
-        const message = messageInput.value.trim();
-        if (message) {
-            appendMessage("You", message);
-            messageInput.value = "";
-
-            // Simulate a response from the API
-            setTimeout(function() {
-                appendMessage("Bot", "This is a simulated response.");
-            }, 1000);
-        }
-    }
-
     function appendMessage(sender, message) {
         const messageElement = document.createElement("div");
         messageElement.className = "message";
