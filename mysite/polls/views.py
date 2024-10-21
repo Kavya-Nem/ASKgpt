@@ -4,7 +4,7 @@ from django.http import HttpResponse
 
 client = OpenAI(
     organization='org-xyx1YTc5MKAo2tXY5jPnibUs',
-    api_key="API_KEY"
+    api_key="API_KEY_HERE"
 )
 
 def process_request(request):
