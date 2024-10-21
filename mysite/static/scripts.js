@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const sendButton = document.getElementById("send-button");
     const messageInput = document.getElementById("message-input");
-    //const messages = document.getElementById("messages");
 
     sendButton.addEventListener("click", sendMessage);
     messageInput.addEventListener("keypress", function(event) {
