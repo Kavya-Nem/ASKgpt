@@ -9,5 +9,4 @@ class TestView(TestCase):
         response = client.get(url)
         self.assertEqual(response.status_code, 200)
         responseStr = str(response.content)
-        print(responseStr)
         self.assertNotEqual(responseStr, None)
