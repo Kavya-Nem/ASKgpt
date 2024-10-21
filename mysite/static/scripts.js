@@ -44,12 +44,4 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         return cookieValue;
     }
-
-    function appendMessage(sender, message) {
-        const messageElement = document.createElement("div");
-        messageElement.className = "message";
-        messageElement.innerHTML = `<strong>${sender}:</strong> ${message}`;
-        messages.appendChild(messageElement);
-        messages.scrollTop = messages.scrollHeight;
-    }*/
 });
